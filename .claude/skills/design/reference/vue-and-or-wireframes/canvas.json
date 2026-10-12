@@ -1,0 +1,30 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-05T12:00:00Z"},
+  "title": "VUE & OR — Website Wireframes",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 8000, "title": "Home", "expand": "fill", "is_interactive": true},
+    "Shop.dc.html": {"x": 1520, "y": 0, "w": 1440, "h": 2500, "title": "Shop & compare", "expand": "fill", "is_interactive": true},
+    "LensGuide.dc.html": {"x": 3040, "y": 0, "w": 1440, "h": 2500, "title": "Lens strength guide", "expand": "fill", "is_interactive": true},
+    "About.dc.html": {"x": 4560, "y": 0, "w": 1440, "h": 3300, "title": "Our story & private viewing", "expand": "fill", "is_interactive": true},
+    "Help.dc.html": {"x": 6080, "y": 0, "w": 1440, "h": 3100, "title": "Help centre", "expand": "fill", "is_interactive": true},
+    "Product.dc.html": {"x": 0, "y": 8420, "w": 1440, "h": 3600, "title": "Product page", "expand": "fill", "is_interactive": true},
+    "Cart.dc.html": {"x": 1520, "y": 8420, "w": 1440, "h": 1500, "title": "Bag", "expand": "fill", "is_interactive": true},
+    "Checkout.dc.html": {"x": 3040, "y": 8420, "w": 1440, "h": 2300, "title": "Checkout", "expand": "fill", "is_interactive": true},
+    "Confirmation.dc.html": {"x": 4560, "y": 8420, "w": 1440, "h": 1800, "title": "Order confirmed", "expand": "fill", "is_interactive": true},
+    "Nav.dc.html": {"x": 0, "y": 12440, "w": 1440, "h": 128, "title": "Navigation (shared)"},
+    "Footer.dc.html": {"x": 1520, "y": 12440, "w": 1440, "h": 460, "title": "Footer (shared)"}
+  },
+  "order": ["Main.dc.html", "Shop.dc.html", "LensGuide.dc.html", "About.dc.html", "Help.dc.html", "Product.dc.html", "Cart.dc.html", "Checkout.dc.html", "Confirmation.dc.html", "Nav.dc.html", "Footer.dc.html"],
+  "notes": {
+    "t1": {"x": 0, "y": -300, "text": "Discover — browse and learn", "kind": "title1", "maxW": 7520},
+    "t2": {"x": 0, "y": 8140, "text": "Buy — product to order confirmation", "kind": "title1", "maxW": 6000},
+    "t3": {"x": 0, "y": 12160, "text": "Shared components", "kind": "title1", "maxW": 2960},
+    "s1": {"x": 7600, "y": 0, "w": 520, "fill": "orange", "text": "Discovery flow\n\nHome: problem → reveal → two models → craftsmanship → lenses → story → reviews → lifestyle → gifting → shop → FAQ → closing CTA with private viewing.\n\nShop: all four variants plus a comparison table.\n\nLens guide: age + on-screen reading test → suggested strength → product.\n\nOur story: founder, craftsmanship, private-viewing booking form, stockists.\n\nHelp: FAQ, delivery, returns, warranty, contact, legal details.\n\nPress Play on any page to click through."},
+    "s2": {"x": 6080, "y": 8420, "w": 520, "fill": "orange", "text": "Purchase flow\n\nProduct → Bag → Checkout → Confirmation.\n\nOn the product page, try the finish, lens type (reading strength / my prescription / not sure yet), strength, engraving and gift options.\n\nIn checkout, try the gift recipient toggle, delivery method and payment method.\n\n[Brackets] = details to confirm: prices, timings, policies, names."},
+    "s3": {"x": 3040, "y": 12440, "w": 440, "fill": "gray", "text": "Used on every page, so a change here updates the whole site."}
+  },
+  "designSystems": []
+}

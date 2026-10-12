@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Help centre</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:64px 0;border-top:1px dashed #C9C4BC}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,60px);line-height:1.05;margin:0}
+.h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(28px,3vw,36px);line-height:1.1;margin:0}
+.h3{font-size:17px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:20px;box-sizing:border-box}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.in{display:block;width:100%;min-height:52px;border:1px solid #BDB7AE;background:#FFFFFF;padding:0 16px;font:16px 'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;box-sizing:border-box}
+details{border-top:1px solid #D8D3CB;padding:16px 0}
+summary{cursor:pointer;font-weight:600;font-size:16px}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+<div class="wrap" style="padding-top:56px;padding-bottom:56px;display:flex;flex-direction:column;gap:28px">
+<p class="eyebrow">Help centre</p>
+<h1 class="h1">How can we help?</h1>
+<div style="max-width:640px"><label for="q" class="sm" style="display:block;margin-bottom:8px;font-weight:600;color:#1F1D1A">Search questions</label><input id="q" type="search" class="in" placeholder="e.g. prescription, delivery to Abu Dhabi"></div>
+<div class="grid4">
+<a class="card" href="#lenses" style="text-decoration:none"><h2 class="h3">Lenses and prescriptions</h2></a>
+<a class="card" href="#delivery" style="text-decoration:none"><h2 class="h3">Delivery</h2></a>
+<a class="card" href="#delivery" style="text-decoration:none"><h2 class="h3">Returns and exchanges</h2></a>
+<a class="card" href="#policies" style="text-decoration:none"><h2 class="h3">Warranty and repairs</h2></a>
+<a class="card" href="#product" style="text-decoration:none"><h2 class="h3">Care</h2></a>
+<a class="card" href="#payments" style="text-decoration:none"><h2 class="h3">Payments and pay later</h2></a>
+<a class="card" href="#product" style="text-decoration:none"><h2 class="h3">Gifting and engraving</h2></a>
+<a class="card" href="#contact" style="text-decoration:none"><h2 class="h3">Contact us</h2></a>
+</div>
+</div>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+<div id="lenses" style="display:flex;flex-wrap:wrap;gap:24px 48px">
+<h2 class="h2" style="flex:1 1 240px">Lenses</h2>
+<div style="flex:3 1 560px">
+<details><summary>Which strengths do you offer?</summary><p class="sm" style="margin-top:10px">+1.00 to +3.00 in 0.25 steps, or lenses made to your prescription. <a href="LensGuide.dc.html">Find your strength</a>.</p></details>
+<details><summary>How do I send my prescription?</summary><p class="sm" style="margin-top:10px">Upload it or type it in on the product page. Our optician verifies it before fitting.</p></details>
+<details><summary>What if I chose the wrong strength?</summary><p class="sm" style="margin-top:10px">[Exchange policy for ready reading lenses within X days.]</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>Can I replace the lenses later?</summary><p class="sm" style="margin-top:10px">[Re-lensing service: AED X, X working days.]</p></details>
+</div>
+</div>
+<div id="delivery" style="display:flex;flex-wrap:wrap;gap:24px 48px">
+<h2 class="h2" style="flex:1 1 240px">Delivery and returns</h2>
+<div style="flex:3 1 560px">
+<details><summary>How long does delivery take?</summary><p class="sm" style="margin-top:10px">[1–2 working days across the UAE; same day in Dubai before 2 pm.]</p></details>
+<details><summary>Do you ship outside the UAE?</summary><p class="sm" style="margin-top:10px">[GCC / international shipping details, duties.]</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>How do returns work?</summary><p class="sm" style="margin-top:10px">[14 days for unworn pieces; engraved and prescription pieces excluded.]</p></details>
+</div>
+</div>
+<div id="product" style="display:flex;flex-wrap:wrap;gap:24px 48px">
+<h2 class="h2" style="flex:1 1 240px">Product, care and gifting</h2>
+<div style="flex:3 1 560px">
+<details><summary>How do I care for the hinge?</summary><p class="sm" style="margin-top:10px">[Care instructions.]</p></details>
+<details><summary>Is the gold hallmarked?</summary><p class="sm" style="margin-top:10px">Yes. Every solid gold piece carries the 750 hallmark and a certificate of authenticity.</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>Can I send it as a gift?</summary><p class="sm" style="margin-top:10px">Yes: gift box, handwritten card, hidden prices, and we can confirm the strength with the recipient.</p></details>
+</div>
+</div>
+<div id="payments" style="display:flex;flex-wrap:wrap;gap:24px 48px">
+<h2 class="h2" style="flex:1 1 240px">Payments</h2>
+<div style="flex:3 1 560px">
+<details><summary>Which payment methods do you accept?</summary><p class="sm" style="margin-top:10px">Visa, Mastercard, Amex, Apple Pay, Google Pay, [Tabby] and [Tamara].</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>Are prices inclusive of VAT?</summary><p class="sm" style="margin-top:10px">Yes, all prices include 5% UAE VAT.</p></details>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="policies">
+<div class="wrap grid3">
+<div class="card" style="display:flex;flex-direction:column;gap:8px;padding:24px"><p class="eyebrow">Policy</p><h2 class="h2" style="font-size:28px">Delivery</h2><p class="sm">[Times and fees by emirate, packaging, insured shipping.]</p><a href="#" class="sm">Full delivery policy</a></div>
+<div class="card" style="display:flex;flex-direction:column;gap:8px;padding:24px"><p class="eyebrow">Policy</p><h2 class="h2" style="font-size:28px">Returns</h2><p class="sm">[Window, condition, exclusions, refund timing.]</p><a href="#" class="sm">Full returns policy</a></div>
+<div class="card" style="display:flex;flex-direction:column;gap:8px;padding:24px"><p class="eyebrow">Policy</p><h2 class="h2" style="font-size:28px">Warranty</h2><p class="sm">[Duration, what's covered, how to claim, repairs.]</p><a href="#" class="sm">Register your piece</a></div>
+</div>
+</section>
+
+<section class="sec" id="contact">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+<div style="flex:1 1 380px;display:flex;flex-direction:column;gap:14px">
+<h2 class="h2">Talk to us</h2>
+<p class="p">We usually reply within [1 hour] on WhatsApp during working hours.</p>
+<p class="sm">[Mon–Fri 9:00–18:00 · Sat 10:00–16:00] (UAE time)</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn" href="#">WhatsApp us</a><a class="btn2" href="#">Email</a><a class="btn2" href="#">Call</a></div>
+</div>
+<div class="card" style="flex:1 1 380px;display:flex;flex-direction:column;gap:8px;padding:24px">
+<h2 class="h3">Legal</h2>
+<p class="sm">[Company legal name] · Trade licence [No.] · [Issuing authority]</p>
+<p class="sm">TRN [No.] · [Registered address]</p>
+<p class="sm" style="display:flex;gap:16px;flex-wrap:wrap"><a href="#">Privacy policy</a><a href="#">Terms of sale</a><a href="#">Cookie settings</a></p>
+</div>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3100}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

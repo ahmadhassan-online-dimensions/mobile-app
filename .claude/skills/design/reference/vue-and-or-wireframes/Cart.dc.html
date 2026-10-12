@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bag</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,56px);line-height:1.05;margin:0}
+.h3{font-size:18px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.ph{background:#E4E0DA;border:1px solid #CFC9C1;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;box-sizing:border-box;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;color:#4F4B46;line-height:1.4}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 28px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:24px;box-sizing:border-box}
+.lb{display:block;font-size:13px;font-weight:600;margin:0 0 6px}
+.in{display:block;width:100%;min-height:48px;border:1px solid #BDB7AE;background:#FFFFFF;padding:0 12px;font:15px 'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;box-sizing:border-box}
+.row{display:flex;justify-content:space-between;gap:16px;font-size:15px;padding:8px 0}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+<div class="wrap" style="padding-top:48px;padding-bottom:80px;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px">
+<h1 class="h1">Your bag</h1>
+<a href="Shop.dc.html" class="sm" style="padding:12px 0">Continue shopping</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+
+<div style="flex:2 1 560px;display:flex;flex-direction:column;gap:20px;min-width:0">
+<article class="card" style="display:flex;flex-wrap:wrap;gap:20px">
+<div class="ph" style="width:150px;height:150px;flex:none">PRODUCT THUMB · selected finish</div>
+<div style="flex:1 1 260px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><h2 class="h3">[Model 01 name] · Wearable</h2><span style="font-weight:600">AED [PRICE]</span></div>
+<p class="sm">Finish: Solid 18k gold</p>
+<p class="sm">Lenses: Reading +2.00 · anti-reflective</p>
+<p class="sm">Chain: 42 cm</p>
+<p class="sm">Engraving: “Mama · 2026”</p>
+<p class="sm">Gift: signature box + handwritten card</p>
+<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:6px">
+<label class="sm" for="qty" style="display:flex;align-items:center;gap:8px">Qty <select id="qty" class="in" style="width:80px"><option>1</option><option>2</option><option>3</option></select></label>
+<a href="Product.dc.html" class="sm" style="padding:12px 0">Edit lenses or engraving</a>
+<a href="#" class="sm" style="padding:12px 0">Remove</a>
+</div>
+</div>
+</article>
+
+<div class="card" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+<div class="ph" style="width:80px;height:80px;flex:none">ACCESSORY</div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:4px"><h3 class="h3" style="font-size:16px">Add a finishing touch</h3><p class="sm">[Leather travel case and lens cloth · AED X]</p></div>
+<button type="button" class="btn2">Add</button>
+</div>
+
+<div class="card" style="display:flex;flex-direction:column;gap:6px;background:#EFECE7">
+<h3 class="h3" style="font-size:16px">Sending it as a gift?</h3>
+<p class="sm">Add the recipient's address at checkout. Prices are hidden on the receipt, and we can confirm her lens strength with her directly.</p>
+</div>
+</div>
+
+<aside style="flex:1 1 340px;display:flex;flex-direction:column;gap:16px;min-width:0">
+<div class="card" style="display:flex;flex-direction:column;gap:8px">
+<h2 class="h3">Order summary</h2>
+<div class="row" style="border-top:1px solid #D8D3CB;margin-top:8px;padding-top:16px"><span>Subtotal</span><span>AED [X]</span></div>
+<div class="row"><span>Engraving</span><span>Complimentary</span></div>
+<div class="row"><span>Gift box and card</span><span>Complimentary</span></div>
+<div class="row"><span>UAE delivery</span><span>Complimentary</span></div>
+<div class="row" style="border-top:1px solid #D8D3CB;padding-top:16px;font-weight:600;font-size:18px"><span>Total</span><span>AED [X]</span></div>
+<p class="sm">Includes 5% VAT of AED [X]</p>
+<div style="display:flex;gap:8px;align-items:flex-end;margin-top:8px">
+<div style="flex:1"><label class="lb" for="promo">Gift card or promo code</label><input id="promo" class="in"></div>
+<button type="button" class="btn2">Apply</button>
+</div>
+<a class="btn" href="Checkout.dc.html" style="margin-top:12px">Checkout securely</a>
+<button type="button" class="btn2" style="width:100%">Apple Pay</button>
+<p class="sm" style="text-align:center">Or 4 interest-free payments of AED [X] with [BNPL PROVIDER]</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<p class="sm">Secure payment · [PSP name]</p>
+<p class="sm">[14]-day returns · [2]-year warranty</p>
+<p class="sm">Questions? <a href="#">Chat with us on WhatsApp</a></p>
+</div>
+</aside>
+</div>
+</div>
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

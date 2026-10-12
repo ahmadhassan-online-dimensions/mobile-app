@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Shop and compare</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,60px);line-height:1.05;margin:0}
+.h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1.1;margin:0}
+.h3{font-size:18px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.ph{background:#E4E0DA;border:1px solid #CFC9C1;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;box-sizing:border-box;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#4F4B46;line-height:1.5}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:24px;box-sizing:border-box}
+.pill{min-height:44px;padding:0 16px;border:1px solid #BDB7AE;background:#FFFFFF;color:#1F1D1A;font:500 14px 'Instrument Sans',system-ui,sans-serif;cursor:pointer}
+.pill.on{background:#1F1D1A;color:#F7F5F1;border-color:#1F1D1A}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px}
+table{border-collapse:collapse;width:100%;min-width:680px}
+th,td{text-align:left;padding:16px;border-bottom:1px solid #D8D3CB;font-size:15px;line-height:1.5;vertical-align:top}
+th{font-weight:600}
+thead th{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:500}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+<div class="wrap" style="padding-top:56px;padding-bottom:80px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:720px">
+<p class="eyebrow">The collection</p>
+<h1 class="h1">Two ways to see. Two finishes.</h1>
+<p class="p">Every piece is fitted with lenses in your strength or prescription.</p>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:8px" aria-label="Filters">
+<button type="button" class="pill on" aria-pressed="true">All</button>
+<button type="button" class="pill" aria-pressed="false">Wearable</button>
+<button type="button" class="pill" aria-pressed="false">Handheld</button>
+<button type="button" class="pill" aria-pressed="false">Solid 18k gold</button>
+<button type="button" class="pill" aria-pressed="false">Gold plated</button>
+<button type="button" class="pill" aria-pressed="false">Gift-ready</button>
+</div>
+
+<div class="grid4">
+<article style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:320px">Model 01 · solid gold<br>hover: open view</div><p class="eyebrow">Wearable</p><h2 class="h3">[Model 01 name]</h2><p class="sm">Solid 18k gold</p><p style="margin:0;font-weight:600">AED [PRICE]</p><a class="btn2" href="Product.dc.html">View</a></article>
+<article style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:320px">Model 01 · gold plated<br>hover: open view</div><p class="eyebrow">Wearable</p><h2 class="h3">[Model 01 name]</h2><p class="sm">Gold plated</p><p style="margin:0;font-weight:600">AED [PRICE]</p><a class="btn2" href="Product.dc.html">View</a></article>
+<article style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:320px">Model 02 · solid gold<br>hover: open view</div><p class="eyebrow">Handheld</p><h2 class="h3">[Model 02 name]</h2><p class="sm">Solid 18k gold</p><p style="margin:0;font-weight:600">AED [PRICE]</p><a class="btn2" href="Product.dc.html">View</a></article>
+<article style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:320px">Model 02 · gold plated<br>hover: open view</div><p class="eyebrow">Handheld</p><h2 class="h3">[Model 02 name]</h2><p class="sm">Gold plated</p><p style="margin:0;font-weight:600">AED [PRICE]</p><a class="btn2" href="Product.dc.html">View</a></article>
+</div>
+
+<section style="display:flex;flex-direction:column;gap:20px;border-top:1px dashed #C9C4BC;padding-top:56px">
+<h2 class="h2">Compare the two models</h2>
+<div style="overflow-x:auto;background:#FFFFFF;border:1px solid #D8D3CB">
+<table>
+<thead><tr><th scope="col"><span class="eyebrow">Feature</span></th><th scope="col">[Model 01] · Wearable</th><th scope="col">[Model 02] · Handheld</th></tr></thead>
+<tbody>
+<tr><th scope="row">How it opens</th><td>Unfolds into glasses you wear</td><td>Unfolds into a lens you hold to your eyes</td></tr>
+<tr><th scope="row">Best for</th><td>Reading for longer, hands free</td><td>Quick glances: phone, menu, price tags</td></tr>
+<tr><th scope="row">Lens options</th><td>+1.00 to +3.00 or prescription</td><td>+1.00 to +3.00 or prescription</td></tr>
+<tr><th scope="row">Pendant size</th><td>[W × H × D] mm</td><td>[W × H × D] mm</td></tr>
+<tr><th scope="row">Weight</th><td>[X] g</td><td>[X] g</td></tr>
+<tr><th scope="row">Chain</th><td>[Length] cm, 18k</td><td>[Length] cm, 18k</td></tr>
+<tr><th scope="row">Finishes</th><td>Solid 18k gold · Gold plated</td><td>Solid 18k gold · Gold plated</td></tr>
+<tr><th scope="row">Price from</th><td>AED [PRICE]</td><td>AED [PRICE]</td></tr>
+<tr><th scope="row"></th><td><a class="btn" href="Product.dc.html">Shop Model 01</a></td><td><a class="btn" href="Product.dc.html">Shop Model 02</a></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div class="card" style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;background:#EFECE7">
+<div style="display:flex;flex-direction:column;gap:6px;max-width:560px"><h2 class="h3">Still deciding?</h2><p class="sm">Take the lens guide, ask us on WhatsApp, or try both at a private viewing.</p></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn2" href="LensGuide.dc.html">Lens guide</a><a class="btn2" href="#">WhatsApp</a><a class="btn2" href="About.dc.html#viewing">Book a viewing</a></div>
+</div>
+</div>
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

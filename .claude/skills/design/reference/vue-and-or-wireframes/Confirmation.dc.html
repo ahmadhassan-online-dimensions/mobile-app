@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order confirmed</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1000px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,60px);line-height:1.05;margin:0}
+.h3{font-size:17px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:24px;box-sizing:border-box}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+<div class="wrap" style="padding-top:64px;padding-bottom:80px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
+<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M7.5 12.5l3 3 6-6.5"></path></svg>
+<p class="eyebrow">Order [ORDER NUMBER]</p>
+<h1 class="h1">Thank you, [First name].</h1>
+<p class="p" style="max-width:560px">Your confirmation is on its way to [email] and WhatsApp. Here's what happens next.</p>
+</div>
+
+<ol class="grid4" style="list-style:none;margin:0;padding:0">
+<li class="card" style="display:flex;flex-direction:column;gap:6px"><p class="eyebrow">1 · Today</p><h2 class="h3">Order confirmed</h2><p class="sm">Payment received.</p></li>
+<li class="card" style="display:flex;flex-direction:column;gap:6px"><p class="eyebrow">2</p><h2 class="h3">Lenses fitted</h2><p class="sm">Your strength or prescription, checked by our optician.</p></li>
+<li class="card" style="display:flex;flex-direction:column;gap:6px"><p class="eyebrow">3</p><h2 class="h3">Quality check</h2><p class="sm">Hinge tested, engraving done, certificate added.</p></li>
+<li class="card" style="display:flex;flex-direction:column;gap:6px"><p class="eyebrow">4 · [DATE]</p><h2 class="h3">Delivered</h2><p class="sm">Tracking link by WhatsApp and SMS.</p></li>
+</ol>
+
+<div class="card" style="background:#EFECE7;display:flex;flex-direction:column;gap:6px">
+<h2 class="h3">Chose “Not sure yet” for the lenses?</h2>
+<p class="sm">We'll message you, or the gift recipient, within [24 hours] to confirm the strength before fitting.</p>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div class="card" style="flex:1 1 380px;display:flex;flex-direction:column;gap:8px">
+<h2 class="h3">Order summary</h2>
+<p class="sm">[Model 01 name] · Solid 18k gold · Reading +2.00</p>
+<p class="sm">Engraving “Mama · 2026” · Gift box and card</p>
+<p class="sm" style="font-weight:600;color:#1F1D1A;margin-top:8px">Total AED [X] · incl. 5% VAT</p>
+<p class="sm">Paid with [method]</p>
+</div>
+<div class="card" style="flex:1 1 280px;display:flex;flex-direction:column;gap:8px">
+<h2 class="h3">Delivering to</h2>
+<p class="sm">[Name]<br>[Building, area]<br>[Emirate]</p>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center"><a class="btn" href="#">Track your order</a><a class="btn2" href="#">Chat with us on WhatsApp</a></div>
+
+<div class="grid3">
+<a class="card" href="Help.dc.html" style="text-decoration:none;display:flex;flex-direction:column;gap:6px"><h2 class="h3">Register your warranty</h2><p class="sm">Activate your [2]-year cover in one minute.</p></a>
+<a class="card" href="Help.dc.html" style="text-decoration:none;display:flex;flex-direction:column;gap:6px"><h2 class="h3">Care guide</h2><p class="sm">Keep the gold and the hinge at their best.</p></a>
+<a class="card" href="#" style="text-decoration:none;display:flex;flex-direction:column;gap:6px"><h2 class="h3">Share VUE &amp; OR</h2><p class="sm">[Referral offer: a gift for you and a friend.]</p></a>
+</div>
+</div>
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

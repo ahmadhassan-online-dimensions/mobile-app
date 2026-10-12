@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:72px 0;border-bottom:1px dashed #C9C4BC}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1.05;margin:0}
+.h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1.1;margin:0}
+.h3{font-size:18px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.ph{background:#E4E0DA;border:1px solid #CFC9C1;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;box-sizing:border-box;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#4F4B46;line-height:1.5}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 28px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 28px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:24px;box-sizing:border-box}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px}
+.chip{display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border:1px solid #BDB7AE;background:#FFFFFF;font-size:13px;font-weight:500}
+details{border-top:1px solid #D8D3CB;padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:16px}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+
+<section style="border-bottom:1px dashed #C9C4BC">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:64px;padding-bottom:64px">
+<div style="flex:1 1 420px;display:flex;flex-direction:column;gap:24px">
+<p class="eyebrow">18k gold necklace · reading glasses inside</p>
+<h1 class="h1">Jewelry, with another point of view.</h1>
+<p class="p" style="font-size:19px;max-width:520px">An 18k gold necklace that opens into reading glasses, whenever you need them. No more searching your bag.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="Shop.dc.html">Shop the collection</a><a class="btn2" href="#reveal">Watch it open</a></div>
+<p class="sm">From AED [PRICE] · or 4 interest-free payments with [BNPL PROVIDER]</p>
+</div>
+<div class="ph" style="flex:1 1 480px;min-height:520px">HERO VIDEO LOOP · 6–8 s, muted, autoplay<br>Model wearing pendant → opens it → reads → closes<br>Still image as fallback</div>
+</div>
+<div style="border-top:1px solid #D8D3CB;background:#FFFFFF">
+<div class="wrap grid4" style="padding-top:20px;padding-bottom:20px;gap:12px">
+<div style="display:flex;gap:10px;align-items:center;font-size:14px;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg>18k solid gold · UAE hallmark 750</div>
+<div style="display:flex;gap:10px;align-items:center;font-size:14px;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg>Lenses +1.00 to +3.00 or your prescription</div>
+<div style="display:flex;gap:10px;align-items:center;font-size:14px;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg>Complimentary UAE delivery</div>
+<div style="display:flex;gap:10px;align-items:center;font-size:14px;font-weight:500"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M8 12.5l2.5 2.5L16 9.5"></path></svg>[2]-year warranty · certificate</div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+<p class="eyebrow">01 — The everyday moment</p>
+<h2 class="h2">Your reading glasses never matched your look. Now they're part of it.</h2>
+<p class="p">Menus, messages, a label in the pharmacy. The moments you need to see up close arrive without warning, and your glasses are never where you need them.</p>
+</div>
+<div class="grid3">
+<div style="display:flex;flex-direction:column;gap:12px"><div class="ph" style="min-height:180px">IMAGE · hand searching a handbag</div><h3 class="h3">Lost in the bag</h3><p class="sm">Readers buried under everything else, exactly when the menu arrives.</p></div>
+<div style="display:flex;flex-direction:column;gap:12px"><div class="ph" style="min-height:180px">IMAGE · dated glasses chain</div><h3 class="h3">Never quite you</h3><p class="sm">Glasses on a chain feel practical, never beautiful.</p></div>
+<div style="display:flex;flex-direction:column;gap:12px"><div class="ph" style="min-height:180px">IMAGE · squinting at a phone</div><h3 class="h3">Always up close</h3><p class="sm">Phone screens, price tags, small print. It happens all day.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec" id="reveal">
+<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p class="eyebrow">02 — The reveal</p>
+<h2 class="h2">From necklace to vision.</h2>
+</div>
+<div class="ph" style="min-height:420px">INTERACTIVE BEFORE / AFTER SLIDER<br>Drag the handle: Closed (wear it) ↔ Open (see with it)</div>
+<p class="sm" style="text-align:center">Slide to open</p>
+<div class="grid3">
+<div class="card" style="display:flex;flex-direction:column;gap:8px"><p class="eyebrow">Step 1</p><h3 class="h3">Wear it</h3><p class="sm">A sculpted pendant on an 18k chain.</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:8px"><p class="eyebrow">Step 2</p><h3 class="h3">Open it</h3><p class="sm">The hinge unfolds in one gesture.</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:8px"><p class="eyebrow">Step 3</p><h3 class="h3">See clearly</h3><p class="sm">Lenses made in your strength or prescription.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p class="eyebrow">03 — Two ways to wear it</p>
+<h2 class="h2">One gesture. Two characters.</h2>
+</div>
+<div class="grid2">
+<article class="card" style="padding:0;display:flex;flex-direction:column">
+<div class="ph" style="min-height:340px;border:0">PRODUCT IMAGE · Model 01 closed + open</div>
+<div style="padding:24px;display:flex;flex-direction:column;gap:12px">
+<p class="eyebrow">Wearable reader</p>
+<h3 class="h2" style="font-size:32px">[Model 01 name]</h3>
+<p class="p">Opens into glasses you wear, hands free.</p>
+<p class="sm"><strong>Best for:</strong> reading for longer: a book, a document, a long menu.</p>
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:8px"><span style="font-weight:600">From AED [PRICE]</span><a class="btn2" href="Product.dc.html">Explore</a></div>
+</div>
+</article>
+<article class="card" style="padding:0;display:flex;flex-direction:column">
+<div class="ph" style="min-height:340px;border:0">PRODUCT IMAGE · Model 02 closed + open</div>
+<div style="padding:24px;display:flex;flex-direction:column;gap:12px">
+<p class="eyebrow">Handheld reader</p>
+<h3 class="h2" style="font-size:32px">[Model 02 name]</h3>
+<p class="p">Opens into a lens you hold to your eyes, then closes back into jewelry.</p>
+<p class="sm"><strong>Best for:</strong> a quick glance: your phone, a price tag, the bill.</p>
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-top:8px"><span style="font-weight:600">From AED [PRICE]</span><a class="btn2" href="Product.dc.html">Explore</a></div>
+</div>
+</article>
+</div>
+<a href="Shop.dc.html" style="font-weight:600;font-size:15px;align-self:flex-start;padding:12px 0">Compare both models side by side →</a>
+</div>
+</section>
+
+<section style="background:#1F1D1A;color:#F7F5F1;padding:72px 0">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div class="ph" style="flex:1 1 440px;min-height:440px;background:#3A3632;border-color:#57524C;color:#E4E0DA">MACRO IMAGE · hinge mechanism + 750 hallmark detail</div>
+<div style="flex:1 1 420px;display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow" style="color:#C9C4BC">04 — Crafted to last</p>
+<h2 class="h2">Fine jewelry first. Precision optics inside.</h2>
+<div style="display:flex;flex-direction:column">
+<div style="border-top:1px solid #57524C;padding:14px 0;display:flex;flex-wrap:wrap;gap:4px 24px"><strong style="flex:0 0 180px">18k solid gold</strong><span style="flex:1 1 220px;color:#D8D3CB;font-size:15px;line-height:1.5">Hallmarked 750 in the UAE, with a certificate of authenticity.</span></div>
+<div style="border-top:1px solid #57524C;padding:14px 0;display:flex;flex-wrap:wrap;gap:4px 24px"><strong style="flex:0 0 180px">Precision hinge</strong><span style="flex:1 1 220px;color:#D8D3CB;font-size:15px;line-height:1.5">[Tested to X openings]</span></div>
+<div style="border-top:1px solid #57524C;padding:14px 0;display:flex;flex-wrap:wrap;gap:4px 24px"><strong style="flex:0 0 180px">Optical lenses</strong><span style="flex:1 1 220px;color:#D8D3CB;font-size:15px;line-height:1.5">[Anti-reflective, scratch-resistant] · +1.00 to +3.00 or prescription</span></div>
+<div style="border-top:1px solid #57524C;border-bottom:1px solid #57524C;padding:14px 0;display:flex;flex-wrap:wrap;gap:4px 24px"><strong style="flex:0 0 180px">Made in [Country]</strong><span style="flex:1 1 220px;color:#D8D3CB;font-size:15px;line-height:1.5">[Atelier / workshop detail]</span></div>
+</div>
+<p class="eyebrow" style="color:#C9C4BC;margin-top:8px">Two finishes</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px 32px">
+<div style="display:flex;gap:12px;align-items:center"><span style="width:32px;height:32px;border-radius:50%;background:#C9A44C;border:1px solid #F7F5F1"></span><span style="font-size:14px;line-height:1.4"><strong>Solid 18k gold</strong><br><span style="color:#D8D3CB">The heirloom piece</span></span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="width:32px;height:32px;border-radius:50%;background:#E3D3A8;border:1px solid #F7F5F1"></span><span style="font-size:14px;line-height:1.4"><strong>Gold plated</strong><br><span style="color:#D8D3CB">[Base metal], the accessible entry</span></span></div>
+</div>
+<a href="About.dc.html" style="color:#F7F5F1;font-weight:600;padding:12px 0;align-self:flex-start">Our craftsmanship →</a>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+<p class="eyebrow">05 — Your lenses</p>
+<h2 class="h2">Your strength, or your prescription.</h2>
+<p class="p">Every piece is fitted with lenses made for you before it leaves our atelier.</p>
+</div>
+<div class="grid3">
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><h3 class="h3">Ready reading strengths</h3><p class="sm">Choose from +1.00 to +3.00 in 0.25 steps.</p><div style="display:flex;flex-wrap:wrap;gap:6px"><span class="chip">+1.00</span><span class="chip">+1.50</span><span class="chip">+2.00</span><span class="chip">+2.50</span><span class="chip">+3.00</span></div></div>
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><h3 class="h3">Your prescription</h3><p class="sm">Upload it or type it in when you order. Our optician checks every prescription. Adds [X] working days.</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><h3 class="h3">Not sure?</h3><p class="sm">Take the 2-minute strength guide, or choose later and we'll confirm with you on WhatsApp before fitting your lenses.</p><a class="btn2" href="LensGuide.dc.html" style="align-self:flex-start">Find my strength</a></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div class="ph" style="flex:1 1 380px;min-height:420px">FOUNDER PORTRAIT</div>
+<div style="flex:1 1 460px;display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow">06 — Our story</p>
+<p class="h2" style="font-style:italic">“[Founder quote: why this piece exists, in one or two sentences.]”</p>
+<p class="sm"><strong>[Founder name]</strong>, founder</p>
+<p class="p">[Two or three sentences: the moment that started VUE &amp; OR, where it is designed and made.]</p>
+<a class="btn2" href="About.dc.html" style="align-self:flex-start">Read our story</a>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p class="eyebrow">07 — Worn and loved</p>
+<h2 class="h2">What our clients say.</h2>
+</div>
+<div class="grid3">
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><p class="sm" style="font-weight:600">Rated 5 / 5</p><p class="p">“[Customer review]”</p><p class="sm">[Name] · [Emirate] · Model 01, +2.00</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><p class="sm" style="font-weight:600">Rated 5 / 5</p><p class="p">“[Customer review]”</p><p class="sm">[Name] · [Emirate] · Model 02, +1.50</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:12px"><p class="sm" style="font-weight:600">Rated 5 / 5</p><p class="p">“[Customer review: bought as a gift]”</p><p class="sm">[Name] · [Emirate] · Gift for mother</p></div>
+</div>
+<p class="eyebrow">As featured in</p>
+<div class="grid4" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:12px">
+<div class="ph" style="min-height:56px">[PRESS LOGO]</div><div class="ph" style="min-height:56px">[PRESS LOGO]</div><div class="ph" style="min-height:56px">[PRESS LOGO]</div><div class="ph" style="min-height:56px">[PRESS LOGO]</div><div class="ph" style="min-height:56px">[PRESS LOGO]</div>
+</div>
+</div>
+</section>
+
+<section style="position:relative;border-bottom:1px dashed #C9C4BC">
+<div class="ph" style="min-height:560px;border:0">FULL-BLEED LIFESTYLE IMAGE · Dubai interior, model reading with the glasses open</div>
+<div style="position:absolute;left:32px;right:32px;bottom:32px;max-width:540px;background:#F7F5F1;padding:32px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+<p class="eyebrow">Life in the UAE</p>
+<h2 class="h2">Made for moments when you want to see a little closer.</h2>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:1 1 460px;display:flex;flex-direction:column;gap:20px">
+<p class="eyebrow">08 — The gift</p>
+<h2 class="h2">A gift she'll wear every day.</h2>
+<p class="p">For Mother's Day, Eid, an anniversary, or just because.</p>
+<div class="grid2" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+<div style="border-top:1px solid #D8D3CB;padding-top:12px"><h3 class="h3" style="font-size:16px">Signature gift box</h3><p class="sm">Complimentary with every piece.</p></div>
+<div style="border-top:1px solid #D8D3CB;padding-top:12px"><h3 class="h3" style="font-size:16px">Engraving</h3><p class="sm">Up to [12] characters, free.</p></div>
+<div style="border-top:1px solid #D8D3CB;padding-top:12px"><h3 class="h3" style="font-size:16px">Handwritten card</h3><p class="sm">Your message, written by hand.</p></div>
+<div style="border-top:1px solid #D8D3CB;padding-top:12px"><h3 class="h3" style="font-size:16px">Strength later</h3><p class="sm">Don't know her strength? We'll arrange it with her after delivery.</p></div>
+</div>
+<a class="btn" href="Shop.dc.html" style="align-self:flex-start">Shop gifts</a>
+</div>
+<div class="ph" style="flex:1 1 400px;min-height:460px">GIFT BOX PACKSHOT · box open, card, pendant</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center">
+<p class="eyebrow">09 — Find your piece</p>
+<h2 class="h2">Find your piece.</h2>
+</div>
+<div class="grid2">
+<article style="display:flex;flex-direction:column;gap:14px">
+<div class="ph" style="min-height:400px">PRODUCT IMAGE · Model 01 worn + open inset</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><div><p class="eyebrow">Wearable reader</p><h3 class="h2" style="font-size:28px">[Model 01 name]</h3></div><span style="font-weight:600">From AED [PRICE]</span></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">Solid 18k gold</span><span class="chip">Gold plated</span></div>
+<p class="sm">Choose your lens strength or prescription on the next step.</p>
+<a class="btn" href="Product.dc.html">Shop now</a>
+</article>
+<article style="display:flex;flex-direction:column;gap:14px">
+<div class="ph" style="min-height:400px">PRODUCT IMAGE · Model 02 in hand + open inset</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><div><p class="eyebrow">Handheld reader</p><h3 class="h2" style="font-size:28px">[Model 02 name]</h3></div><span style="font-weight:600">From AED [PRICE]</span></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><span class="chip">Solid 18k gold</span><span class="chip">Gold plated</span></div>
+<p class="sm">Choose your lens strength or prescription on the next step.</p>
+<a class="btn" href="Product.dc.html">Shop now</a>
+</article>
+</div>
+<div class="grid4" style="gap:12px">
+<div class="card" style="padding:16px"><h3 class="h3" style="font-size:15px">Delivery in 1–2 days</h3><p class="sm">Across the UAE, complimentary [CONFIRM]</p></div>
+<div class="card" style="padding:16px"><h3 class="h3" style="font-size:15px">[14]-day returns</h3><p class="sm">Unworn, non-engraved pieces [CONFIRM]</p></div>
+<div class="card" style="padding:16px"><h3 class="h3" style="font-size:15px">[2]-year warranty</h3><p class="sm">Including the hinge mechanism</p></div>
+<div class="card" style="padding:16px"><h3 class="h3" style="font-size:15px">Certificate of authenticity</h3><p class="sm">Hallmark 750 on every gold piece</p></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"><span class="sm" style="margin-right:4px">Pay with</span><span class="chip">Apple Pay</span><span class="chip">Visa</span><span class="chip">Mastercard</span><span class="chip">[Tabby]</span><span class="chip">[Tamara]</span></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px">
+<div style="flex:1 1 320px;display:flex;flex-direction:column;gap:16px">
+<p class="eyebrow">10 — Questions</p>
+<h2 class="h2">Before you ask.</h2>
+<a href="Help.dc.html" style="font-weight:600;padding:12px 0">All questions →</a>
+</div>
+<div style="flex:2 1 520px">
+<details><summary>What lens strengths are available?</summary><p class="sm" style="margin-top:10px">From +1.00 to +3.00 in 0.25 steps, or lenses made to your prescription.</p></details>
+<details><summary>Can I use my own prescription?</summary><p class="sm" style="margin-top:10px">Yes. Upload or enter it when you order; our optician verifies it. Adds [X] working days.</p></details>
+<details><summary>Can the lenses be changed later?</summary><p class="sm" style="margin-top:10px">[Yes, our re-lensing service costs AED X and takes X days.]</p></details>
+<details><summary>How heavy is the pendant?</summary><p class="sm" style="margin-top:10px">[X] g, on a [X] cm chain.</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>What if I need to return it?</summary><p class="sm" style="margin-top:10px">[14] days for unworn, non-engraved pieces. Prescription lenses are made to order [CONFIRM].</p></details>
+</div>
+</div>
+</section>
+
+<section style="padding:72px 0">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div class="ph" style="flex:1 1 420px;min-height:440px">CLOSING IMAGE · glasses in use (different from the hero shot)</div>
+<div style="flex:1 1 420px;display:flex;flex-direction:column;gap:20px">
+<h2 class="h1">Wear the jewelry. Discover what it can do.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="Shop.dc.html">Shop now</a><a class="btn2" href="LensGuide.dc.html">Find my strength</a></div>
+<div class="card" style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+<h3 class="h3">Prefer to see it in person?</h3>
+<p class="sm">Book a private viewing at home, at your office or at our [studio]. Or ask us anything on WhatsApp.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn2" href="About.dc.html#viewing">Book a private viewing</a><a class="btn2" href="#">Chat on WhatsApp</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+<a href="#" aria-label="Chat on WhatsApp" style="position:fixed;right:24px;bottom:24px;width:56px;height:56px;border-radius:50%;background:#1F1D1A;color:#F7F5F1;display:flex;align-items:center;justify-content:center;z-index:10"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1L4 20z"></path></svg></a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

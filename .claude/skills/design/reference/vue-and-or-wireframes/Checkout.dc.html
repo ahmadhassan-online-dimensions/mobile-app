@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Checkout</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.1;margin:0}
+.h3{font-size:18px;font-weight:600;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.ph{background:#E4E0DA;border:1px solid #CFC9C1;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px;box-sizing:border-box;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;color:#4F4B46}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:56px;padding:0 28px;background:#1F1D1A;color:#F7F5F1;font:600 16px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 16px;background:#FFFFFF;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:24px;box-sizing:border-box}
+.lb{display:block;font-size:13px;font-weight:600;margin:0 0 6px}
+.in{display:block;width:100%;min-height:48px;border:1px solid #BDB7AE;background:#FFFFFF;padding:0 12px;font:15px 'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;box-sizing:border-box}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.chk{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#45413C;cursor:pointer}
+.chk input{width:20px;height:20px;margin:1px 0 0;accent-color:#1F1D1A;flex:none}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:16px;background:#FFFFFF;cursor:pointer;font-size:15px;line-height:1.4;box-sizing:border-box}
+.opt input{width:20px;height:20px;margin:0;accent-color:#1F1D1A;flex:none}
+.row{display:flex;justify-content:space-between;gap:16px;font-size:15px;padding:6px 0}
+</style>
+</helmet>
+<div class="wf">
+<header style="border-bottom:1px solid #D8D3CB;background:#F7F5F1">
+<div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:16px;padding-bottom:16px">
+<a href="Main.dc.html" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:600;letter-spacing:0.06em;text-decoration:none">VUE &amp; OR</a>
+<span class="sm" style="display:flex;align-items:center;gap:8px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F1D1A" stroke-width="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>Secure checkout</span>
+<a href="Cart.dc.html" class="sm" style="padding:12px 0">Back to bag</a>
+</div>
+</header>
+<div class="wrap" style="padding-top:40px;padding-bottom:80px;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+
+<div style="flex:2 1 560px;display:flex;flex-direction:column;gap:36px;min-width:0">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p class="eyebrow">Express checkout</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px">
+<button type="button" class="btn2">Apple Pay</button><button type="button" class="btn2">Google Pay</button><button type="button" class="btn2">[Tabby]</button>
+</div>
+<p class="sm" style="text-align:center">or continue below</p>
+</div>
+
+<section style="display:flex;flex-direction:column;gap:16px">
+<h2 class="h2">1. Contact</h2>
+<div class="g2">
+<div><label class="lb" for="em">Email</label><input id="em" type="email" class="in"></div>
+<div><label class="lb" for="ph">Mobile</label><div style="display:flex;gap:8px"><select class="in" aria-label="Country code" style="width:100px;flex:none"><option>+971</option><option>+966</option><option>+44</option></select><input id="ph" type="tel" class="in"></div></div>
+</div>
+<label class="chk"><input type="checkbox"><span>Send me order and delivery updates on WhatsApp</span></label>
+<label class="chk"><input type="checkbox"><span>Email me about new pieces and private events (optional)</span></label>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:16px">
+<h2 class="h2">2. Delivery</h2>
+<label class="chk"><input type="checkbox" checked="{{gift}}" onChange="{{toggleGift}}"><span><strong style="color:#1F1D1A">This is a gift: deliver to someone else</strong></span></label>
+<sc-if value="{{gift}}" hint-placeholder-val="{{ false }}">
+<div class="card g2" style="background:#EFECE7">
+<div><label class="lb" for="rn">Recipient name</label><input id="rn" class="in"></div>
+<div><label class="lb" for="rp">Recipient mobile (for delivery and lens strength)</label><input id="rp" type="tel" class="in"></div>
+</div>
+</sc-if>
+<div class="g2">
+<div><label class="lb" for="fn">Full name</label><input id="fn" class="in"></div>
+<div><label class="lb" for="emi">Emirate</label><select id="emi" class="in"><option>Dubai</option><option>Abu Dhabi</option><option>Sharjah</option><option>Ajman</option><option>Umm Al Quwain</option><option>Ras Al Khaimah</option><option>Fujairah</option></select></div>
+<div><label class="lb" for="ar">Area</label><input id="ar" class="in"></div>
+<div><label class="lb" for="bd">Building or villa</label><input id="bd" class="in"></div>
+<div><label class="lb" for="ap">Apartment and floor (optional)</label><input id="ap" class="in"></div>
+<div><label class="lb" for="lm">Landmark or delivery notes</label><input id="lm" class="in"></div>
+</div>
+<p class="lb" style="margin-top:8px">Delivery method</p>
+<div style="display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ships}}" as="o" hint-placeholder-count="3">
+<label class="opt" style="border:{{o.border}}"><input type="radio" name="ship" checked="{{o.checked}}" onChange="{{o.pick}}"><span style="flex:1"><strong>{{o.label}}</strong><br><span class="sm">{{o.sub}}</span></span><span style="font-weight:600">{{o.price}}</span></label>
+</sc-for>
+</div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:16px">
+<h2 class="h2">3. Payment</h2>
+<div style="display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{pays}}" as="o" hint-placeholder-count="4">
+<label class="opt" style="border:{{o.border}}"><input type="radio" name="pay" checked="{{o.checked}}" onChange="{{o.pick}}"><span style="flex:1"><strong>{{o.label}}</strong><br><span class="sm">{{o.sub}}</span></span></label>
+</sc-for>
+</div>
+<sc-if value="{{isCard}}" hint-placeholder-val="{{ true }}">
+<div class="card g2">
+<div style="grid-column:1 / -1"><label class="lb" for="cn">Card number</label><input id="cn" class="in" inputmode="numeric"></div>
+<div><label class="lb" for="ex">Expiry (MM / YY)</label><input id="ex" class="in"></div>
+<div><label class="lb" for="cv">Security code</label><input id="cv" class="in"></div>
+<div style="grid-column:1 / -1"><label class="lb" for="nc">Name on card</label><input id="nc" class="in"></div>
+</div>
+</sc-if>
+<sc-if value="{{isOther}}" hint-placeholder-val="{{ false }}">
+<div class="card"><p class="sm">{{payNote}}</p></div>
+</sc-if>
+<label class="chk"><input type="checkbox"><span>Billing address is the same as delivery</span></label>
+<label class="chk"><input type="checkbox"><span>I agree to the <a href="Help.dc.html">Terms</a>, <a href="Help.dc.html">Returns policy</a> and <a href="Help.dc.html">Privacy policy</a></span></label>
+</section>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<a class="btn" href="Confirmation.dc.html" style="width:100%">Pay AED [TOTAL]</a>
+<p class="sm" style="text-align:center">Prices include 5% VAT · TRN [No.] · Payments secured by [PSP]</p>
+</div>
+</div>
+
+<aside style="flex:1 1 340px;min-width:0">
+<div class="card" style="display:flex;flex-direction:column;gap:12px">
+<h2 class="h3">Order summary</h2>
+<div style="display:flex;gap:12px;align-items:flex-start;border-top:1px solid #D8D3CB;padding-top:16px">
+<div class="ph" style="width:72px;height:72px;flex:none">THUMB</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:2px"><strong style="font-size:15px">[Model 01 name]</strong><span class="sm">Solid 18k gold · +2.00</span><span class="sm">Engraved · gift-wrapped</span></div>
+<span style="font-weight:600;font-size:15px">AED [X]</span>
+</div>
+<div style="border-top:1px solid #D8D3CB;padding-top:12px">
+<div class="row"><span>Subtotal</span><span>AED [X]</span></div>
+<div class="row"><span>Delivery</span><span>{{shipPrice}}</span></div>
+<div class="row" style="font-weight:600;font-size:18px;border-top:1px solid #D8D3CB;margin-top:6px;padding-top:12px"><span>Total</span><span>AED [X]</span></div>
+<p class="sm">Includes 5% VAT of AED [X]</p>
+</div>
+<p class="sm" style="background:#EFECE7;padding:12px">Estimated delivery: [DATE]. Prescription or engraving adds [X] working days.</p>
+</div>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2300}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { pay: 'card', ship: 'std', gift: false };
+  }
+  renderVals() {
+    const s = this.state;
+    const S = [
+      { id: 'std', label: 'Standard delivery', sub: '1–2 working days across the UAE [CONFIRM]', price: 'Complimentary' },
+      { id: 'same', label: 'Same-day delivery', sub: 'Dubai only, order before [2 pm]', price: 'AED [X]' },
+      { id: 'collect', label: 'Collect at a private viewing', sub: '[Studio / boutique, Dubai] · by appointment', price: 'Complimentary' }
+    ];
+    const ships = S.map((o) => Object.assign({}, o, {
+      checked: o.id === s.ship,
+      border: o.id === s.ship ? '2px solid #1F1D1A' : '1px solid #BDB7AE',
+      pick: () => this.setState({ ship: o.id })
+    }));
+    const P = [
+      { id: 'card', label: 'Credit or debit card', sub: 'Visa · Mastercard · Amex', note: '' },
+      { id: 'apple', label: 'Apple Pay', sub: 'Confirm on your device', note: 'You will confirm the payment with Apple Pay on your device.' },
+      { id: 'tabby', label: '[Tabby] · pay in 4', sub: 'Interest-free instalments [CONFIRM]', note: 'You will be redirected to [Tabby] to complete your payment.' },
+      { id: 'tamara', label: '[Tamara] · pay later', sub: 'Split into [3–4] payments', note: 'You will be redirected to [Tamara] to complete your payment.' }
+    ];
+    const pays = P.map((o) => Object.assign({}, o, {
+      checked: o.id === s.pay,
+      border: o.id === s.pay ? '2px solid #1F1D1A' : '1px solid #BDB7AE',
+      pick: () => this.setState({ pay: o.id })
+    }));
+    const curPay = P.find((o) => o.id === s.pay) || P[0];
+    const curShip = S.find((o) => o.id === s.ship) || S[0];
+    return {
+      ships: ships,
+      pays: pays,
+      isCard: s.pay === 'card',
+      isOther: s.pay !== 'card',
+      payNote: curPay.note,
+      shipPrice: curShip.price,
+      gift: s.gift,
+      toggleGift: () => this.setState({ gift: !this.state.gift })
+    };
+  }
+}
+</script>
+</body>
+</html>

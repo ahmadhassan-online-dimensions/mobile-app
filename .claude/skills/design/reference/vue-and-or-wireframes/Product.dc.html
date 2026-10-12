@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Product page</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#F7F5F1}
+a{color:#1F1D1A}a:hover{color:#000000}
+.wf{font-family:'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;background:#F7F5F1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.sec{padding:72px 0;border-top:1px dashed #C9C4BC}
+.eyebrow{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#5E5A55;margin:0}
+.h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1.05;margin:0}
+.h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1.1;margin:0}
+.h3{font-size:18px;font-weight:600;margin:0}
+.p{font-size:16px;line-height:1.6;color:#45413C;margin:0}
+.sm{font-size:14px;line-height:1.5;color:#45413C;margin:0}
+.ph{background:#E4E0DA;border:1px solid #CFC9C1;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;box-sizing:border-box;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:#4F4B46;line-height:1.5}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 28px;background:#1F1D1A;color:#F7F5F1;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.btn:hover{color:#FFFFFF;background:#000000}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;background:transparent;color:#1F1D1A;font:600 15px 'Instrument Sans',system-ui,sans-serif;text-decoration:none;border:1px solid #1F1D1A;cursor:pointer;box-sizing:border-box}
+.card{background:#FFFFFF;border:1px solid #D8D3CB;padding:20px;box-sizing:border-box}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px}
+.pill{min-height:44px;padding:0 10px;border:1px solid #BDB7AE;background:#FFFFFF;color:#1F1D1A;font:500 14px 'Instrument Sans',system-ui,sans-serif;cursor:pointer;box-sizing:border-box}
+.pill.on{background:#1F1D1A;color:#F7F5F1;border-color:#1F1D1A}
+.lb{display:block;font-size:14px;font-weight:600;margin:0 0 8px;padding:0}
+.in{display:block;width:100%;min-height:48px;border:1px solid #BDB7AE;background:#FFFFFF;padding:0 12px;font:15px 'Instrument Sans',system-ui,sans-serif;color:#1F1D1A;box-sizing:border-box}
+.chk{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#45413C;cursor:pointer}
+.chk input{width:20px;height:20px;margin:1px 0 0;accent-color:#1F1D1A;flex:none}
+fieldset{border:0;padding:0;margin:0;min-width:0}
+details{border-top:1px solid #D8D3CB;padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:16px}
+table{border-collapse:collapse;width:100%;min-width:420px}
+th,td{text-align:left;padding:6px;font-size:13px}
+</style>
+</helmet>
+<div class="wf">
+<dc-import name="Nav" hint-size="100%,128px"></dc-import>
+<div class="wrap" style="padding-top:20px;padding-bottom:72px">
+<nav aria-label="Breadcrumb" class="sm" style="margin-bottom:24px"><a href="Main.dc.html">Home</a> / <a href="Shop.dc.html">Shop</a> / [Model 01 name]</nav>
+<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+
+<div style="flex:1 1 520px;display:flex;flex-direction:column;gap:10px;min-width:0">
+<div class="ph" style="min-height:640px">MAIN IMAGE · {{finishLabel}}<br>Swipe gallery · pinch to zoom<br>Image changes with the selected finish</div>
+<div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px">
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">Closed</div>
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">Open</div>
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">On model</div>
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">Hinge</div>
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">Video</div>
+<div class="ph" style="min-height:80px;font-size:10px;padding:4px">Scale</div>
+</div>
+</div>
+
+<div style="flex:1 1 400px;display:flex;flex-direction:column;gap:28px;min-width:0">
+<div style="display:flex;flex-direction:column;gap:10px">
+<p class="eyebrow">Wearable reader · Model 01</p>
+<h1 class="h1" style="font-size:48px">[Model 01 name]</h1>
+<p class="p">An 18k gold pendant that opens into reading glasses you wear, hands free.</p>
+<a href="#reviews" class="sm">Rated [4.9] / 5 · [32] reviews</a>
+<p style="margin:8px 0 0;font-size:24px;font-weight:600">{{price}}</p>
+<p class="sm">Includes 5% VAT · or 4 interest-free payments with [BNPL PROVIDER]</p>
+</div>
+
+<fieldset>
+<legend class="lb">1. Finish: {{finishLabel}}</legend>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+<sc-for list="{{finishes}}" as="f" hint-placeholder-count="2">
+<button type="button" aria-pressed="{{f.pressed}}" onClick="{{f.pick}}" style="display:flex;align-items:center;gap:12px;padding:12px;min-height:64px;background:#FFFFFF;cursor:pointer;font-family:inherit;color:#1F1D1A;box-sizing:border-box;text-align:left;border:{{f.border}}">
+<span style="width:28px;height:28px;border-radius:50%;flex:none;border:1px solid #9C968E;background:{{f.dot}}"></span>
+<span style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:600;font-size:15px">{{f.label}}</span><span style="font-size:13px;color:#5E5A55">{{f.sub}}</span></span>
+</button>
+</sc-for>
+</div>
+</fieldset>
+
+<fieldset style="display:flex;flex-direction:column;gap:12px">
+<legend class="lb">2. Lenses</legend>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+<sc-for list="{{modes}}" as="m" hint-placeholder-count="3">
+<button type="button" class="{{m.cls}}" aria-pressed="{{m.pressed}}" onClick="{{m.pick}}" style="width:100%">{{m.label}}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{isStrength}}" hint-placeholder-val="{{ true }}">
+<div class="card" style="display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:baseline"><span style="font-weight:600;font-size:14px">Reading strength: {{strength}}</span><a href="LensGuide.dc.html" class="sm">Not sure? 2-minute guide</a></div>
+<div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px">
+<sc-for list="{{strengths}}" as="s" hint-placeholder-count="9">
+<button type="button" class="{{s.cls}}" aria-pressed="{{s.pressed}}" onClick="{{s.pick}}">{{s.v}}</button>
+</sc-for>
+</div>
+<p class="sm">Same strength in both lenses, anti-reflective coating included. Typical starting points: age 40–44 +1.00 · 45–49 +1.50 · 50–54 +2.00 · 55+ +2.25 to +2.50.</p>
+</div>
+</sc-if>
+
+<sc-if value="{{isRx}}" hint-placeholder-val="{{ false }}">
+<div class="card" style="display:flex;flex-direction:column;gap:14px">
+<p class="sm">Upload a photo of your prescription or type it in. Our optician checks it before fitting your lenses. Adds [X] working days.</p>
+<div><label class="lb" for="rxfile">Upload prescription (photo or PDF)</label><input id="rxfile" type="file" class="in" style="padding:10px 12px"></div>
+<p class="sm" style="font-weight:600">Or enter it</p>
+<div style="overflow-x:auto">
+<table>
+<thead><tr><th>Eye</th><th>SPH</th><th>CYL</th><th>AXIS</th><th>ADD</th></tr></thead>
+<tbody>
+<tr><td>Right (OD)</td><td><input class="in" aria-label="Right SPH" placeholder="+0.00"></td><td><input class="in" aria-label="Right CYL" placeholder="0.00"></td><td><input class="in" aria-label="Right axis" placeholder="0"></td><td><input class="in" aria-label="Right ADD" placeholder="+2.00"></td></tr>
+<tr><td>Left (OS)</td><td><input class="in" aria-label="Left SPH" placeholder="+0.00"></td><td><input class="in" aria-label="Left CYL" placeholder="0.00"></td><td><input class="in" aria-label="Left axis" placeholder="0"></td><td><input class="in" aria-label="Left ADD" placeholder="+2.00"></td></tr>
+</tbody>
+</table>
+</div>
+<div style="max-width:200px"><label class="lb" for="pd">Pupillary distance (PD)</label><input id="pd" class="in" placeholder="e.g. 62 mm"></div>
+<p class="sm">Prescription lenses are made to order and can't be returned [CONFIRM].</p>
+</div>
+</sc-if>
+
+<sc-if value="{{isLater}}" hint-placeholder-val="{{ false }}">
+<div class="card" style="display:flex;flex-direction:column;gap:12px">
+<h3 class="h3" style="font-size:16px">Choose the strength after ordering</h3>
+<p class="sm">Ideal for gifts. After you order, we'll contact you, or the person receiving it, on WhatsApp to confirm the strength or prescription before we fit the lenses.</p>
+<a class="btn2" href="LensGuide.dc.html" style="align-self:flex-start">Take the strength guide</a>
+</div>
+</sc-if>
+</fieldset>
+
+<div>
+<label class="lb" for="chain">3. Chain length</label>
+<select id="chain" class="in"><option>40 cm</option><option>42 cm</option><option>45 cm (adjustable)</option></select>
+<p class="sm" style="margin-top:6px">[CONFIRM available lengths] · <a href="Help.dc.html">Size guide</a></p>
+</div>
+
+<fieldset style="display:flex;flex-direction:column;gap:14px">
+<legend class="lb">4. Make it personal (optional)</legend>
+<label class="chk"><input type="checkbox" checked="{{engrave}}" onChange="{{toggleEngrave}}"><span><strong style="color:#1F1D1A">Engraving</strong> · complimentary, up to [12] characters on the back of the pendant</span></label>
+<sc-if value="{{engrave}}" hint-placeholder-val="{{ false }}">
+<div style="padding-left:32px;display:flex;flex-direction:column;gap:6px"><label class="lb" for="eng" style="margin:0">Engraving text</label><input id="eng" class="in" maxlength="12" placeholder="e.g. Mama · 2026"><p class="sm">Engraved pieces can't be returned [CONFIRM] · adds [X] working days</p></div>
+</sc-if>
+<label class="chk"><input type="checkbox" checked="{{gift}}" onChange="{{toggleGift}}"><span><strong style="color:#1F1D1A">This is a gift</strong> · signature box, handwritten card, prices hidden on the receipt</span></label>
+<sc-if value="{{gift}}" hint-placeholder-val="{{ false }}">
+<div style="padding-left:32px;display:flex;flex-direction:column;gap:6px"><label class="lb" for="msg" style="margin:0">Card message</label><textarea id="msg" class="in" style="min-height:96px;padding:12px" placeholder="Up to 200 characters"></textarea></div>
+</sc-if>
+</fieldset>
+
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #D8D3CB;padding-top:20px">
+<p class="sm"><strong style="color:#1F1D1A">Your selection:</strong> {{summary}}</p>
+<a class="btn" href="Cart.dc.html" style="width:100%">Add to bag · {{price}}</a>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px"><a class="btn2" href="About.dc.html#viewing">Book a viewing</a><a class="btn2" href="#">Ask on WhatsApp</a></div>
+<p class="sm">Order today, delivered by [DATE] in Dubai · {{leadNote}}</p>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+<p class="sm" style="border-top:1px solid #D8D3CB;padding-top:10px">Hallmarked 750 · certificate of authenticity</p>
+<p class="sm" style="border-top:1px solid #D8D3CB;padding-top:10px">[2]-year warranty, hinge included</p>
+<p class="sm" style="border-top:1px solid #D8D3CB;padding-top:10px">[14]-day returns [CONFIRM]</p>
+<p class="sm" style="border-top:1px solid #D8D3CB;padding-top:10px">Complimentary UAE delivery</p>
+</div>
+</div>
+</div>
+</div>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-direction:column;gap:28px">
+<h2 class="h2">How it opens</h2>
+<div class="grid3">
+<div style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:240px">STEP IMAGE / CLIP · closed pendant</div><p class="sm"><strong>1.</strong> Hold the pendant between two fingers.</p></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:240px">STEP IMAGE / CLIP · hinge opening</div><p class="sm"><strong>2.</strong> Press [the clasp] and unfold the arms.</p></div>
+<div style="display:flex;flex-direction:column;gap:10px"><div class="ph" style="min-height:240px">STEP IMAGE / CLIP · glasses worn</div><p class="sm"><strong>3.</strong> Wear, read, then fold it back into jewelry.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:48px">
+<div style="flex:1 1 280px"><h2 class="h2">The details</h2></div>
+<div style="flex:2 1 560px">
+<details open="open"><summary>Details and dimensions</summary><div class="sm" style="margin-top:10px;display:flex;flex-direction:column;gap:6px"><span>Pendant: [W × H × D] mm · [X] g</span><span>Chain: 18k gold, [length] cm, [clasp type]</span><span>Lenses: [material], anti-reflective coating</span><span>Hallmark: 750, UAE · Made in [Country]</span></div></details>
+<details><summary>Lenses and re-lensing</summary><p class="sm" style="margin-top:10px">Strengths +1.00 to +3.00 or prescription. [Re-lensing service: AED X, X working days.]</p></details>
+<details><summary>Care</summary><p class="sm" style="margin-top:10px">[Cleaning, storage in the travel case, avoid perfume on the hinge.]</p></details>
+<details><summary>Delivery and returns</summary><p class="sm" style="margin-top:10px">[Delivery times by emirate · return conditions · exclusions for engraved and prescription pieces.]</p></details>
+<details style="border-bottom:1px solid #D8D3CB"><summary>Warranty</summary><p class="sm" style="margin-top:10px">[2]-year warranty covering the hinge and manufacturing defects. Register your piece after delivery.</p></details>
+</div>
+</div>
+</section>
+
+<section class="sec" id="reviews">
+<div class="wrap" style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px">
+<div style="display:flex;flex-direction:column;gap:8px"><h2 class="h2">Reviews</h2><p class="sm">Rated [4.9] / 5 from [32] verified buyers</p></div>
+<a class="btn2" href="#">Write a review</a>
+</div>
+<div class="grid3">
+<div class="card" style="display:flex;flex-direction:column;gap:10px"><p class="sm" style="font-weight:600">5 / 5 · Verified buyer</p><p class="p">“[Review text]”</p><p class="sm">[Name] · Solid gold · +2.00</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:10px"><p class="sm" style="font-weight:600">5 / 5 · Verified buyer</p><p class="p">“[Review text]”</p><p class="sm">[Name] · Gold plated · prescription</p></div>
+<div class="card" style="display:flex;flex-direction:column;gap:10px"><p class="sm" style="font-weight:600">4 / 5 · Verified buyer</p><p class="p">“[Review text]”</p><p class="sm">[Name] · Gift · strength chosen later</p></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap" style="display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+<div class="ph" style="flex:1 1 320px;min-height:280px">PRODUCT IMAGE · Model 02</div>
+<div style="flex:1 1 380px;display:flex;flex-direction:column;gap:12px">
+<p class="eyebrow">The other way to wear it</p>
+<h2 class="h2" style="font-size:32px">[Model 02 name] · Handheld reader</h2>
+<p class="p">A lens you hold to your eyes for a quick glance, then close back into jewelry.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn2" href="Product.dc.html">View Model 02</a><a class="btn2" href="Shop.dc.html">Compare models</a></div>
+</div>
+</div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,460px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":3600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { finish: 'gold', mode: 'strength', strength: '+2.00', engrave: false, gift: false };
+  }
+  renderVals() {
+    const s = this.state;
+    const F = [
+      { id: 'gold', label: 'Solid 18k gold', sub: 'Hallmarked 750', price: 'AED [PRICE · 18K]', dot: '#C9A44C' },
+      { id: 'plated', label: 'Gold plated', sub: '[Base metal], 18k plating', price: 'AED [PRICE · PLATED]', dot: '#E3D3A8' }
+    ];
+    const cur = F.find((f) => f.id === s.finish) || F[0];
+    const finishes = F.map((f) => {
+      const on = f.id === s.finish;
+      return Object.assign({}, f, {
+        pressed: on ? 'true' : 'false',
+        border: on ? '2px solid #1F1D1A' : '1px solid #BDB7AE',
+        pick: () => this.setState({ finish: f.id })
+      });
+    });
+    const M = [['strength', 'Reading strength'], ['rx', 'My prescription'], ['later', 'Not sure yet']];
+    const modes = M.map((m) => ({
+      label: m[1],
+      cls: m[0] === s.mode ? 'pill on' : 'pill',
+      pressed: m[0] === s.mode ? 'true' : 'false',
+      pick: () => this.setState({ mode: m[0] })
+    }));
+    const V = ['+1.00', '+1.25', '+1.50', '+1.75', '+2.00', '+2.25', '+2.50', '+2.75', '+3.00'];
+    const strengths = V.map((v) => ({
+      v: v,
+      cls: v === s.strength ? 'pill on' : 'pill',
+      pressed: v === s.strength ? 'true' : 'false',
+      pick: () => this.setState({ strength: v })
+    }));
+    let lens = 'Reading ' + s.strength;
+    if (s.mode === 'rx') lens = 'Prescription lenses';
+    if (s.mode === 'later') lens = 'Strength confirmed after order';
+    const parts = [cur.label, lens];
+    if (s.engrave) parts.push('Engraved');
+    if (s.gift) parts.push('Gift-wrapped');
+    let leadNote = 'ready to ship';
+    if (s.mode === 'rx') leadNote = 'prescription adds [X] working days';
+    else if (s.engrave) leadNote = 'engraving adds [X] working days';
+    return {
+      finishes: finishes,
+      finishLabel: cur.label,
+      price: cur.price,
+      modes: modes,
+      isStrength: s.mode === 'strength',
+      isRx: s.mode === 'rx',
+      isLater: s.mode === 'later',
+      strengths: strengths,
+      strength: s.strength,
+      engrave: s.engrave,
+      gift: s.gift,
+      toggleEngrave: () => this.setState({ engrave: !this.state.engrave }),
+      toggleGift: () => this.setState({ gift: !this.state.gift }),
+      summary: parts.join(' · '),
+      leadNote: leadNote
+    };
+  }
+}
+</script>
+</body>
+</html>
